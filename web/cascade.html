@@ -16,9 +16,9 @@
     
     <div id="sample_container_id">
       <table>
-        <tbody template iterate="row in rows">
+        <tbody template iterate="row in cells">
           <tr template iterate="cell in row">
-            <td>{{cell}}</td>
+            <td>{{cell.contents}}</td>
           </tr>
         </tbody>
       </table>
