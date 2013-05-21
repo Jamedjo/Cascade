@@ -1,0 +1,29 @@
+/* Auto-generated from components style tags. */
+/* DO NOT EDIT. */
+
+/* ==================================================== 
+   Component x-game-cell stylesheet 
+   ==================================================== */
+.x-game-cell_game-cell {
+  width: 10px;
+  height: 10px;
+  padding: 11px;
+  margin-top: -3px;
+  margin-right: -3px;
+}
+.x-game-cell_game-cell-1 {
+  background-image: url("../ball1.gif");
+}
+.x-game-cell_game-cell-2 {
+  background-image: url("../ball2.gif");
+}
+.x-game-cell_game-cell-3 {
+  background-image: url("../ball3.gif");
+}
+.x-game-cell_game-cell-4 {
+  background-image: url("../ball4.gif");
+}
+.x-game-cell_game-cell-5 {
+  background-image: url("../ball5.gif");
+}
+

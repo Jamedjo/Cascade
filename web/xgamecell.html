@@ -4,16 +4,22 @@
   <body>
     <element name="x-game-cell" constructor="CellComponent" extends="div">
       <template>
-          <div class="game-cell {{'game-cell-'+contents.toString()}}" on-click="increment()">{{contents}}</div>
+          <div class="game-cell {{'game-cell-'+contents.toString()}}" on-click="increment()"></div>
       </template>
       <script type="application/dart" src="xgamecell.dart"></script>
       <style>
         .game-cell{
-          width:20px;
-          height:20px;
-          padding:3px;
+          width: 10px;
+          height: 10px;
+          padding: 11px;
+          margin-top: -3px;
+          margin-right: -3px;
         }
-        /*.game-cell-1{background-image:url('ball1.gif');}*/
+        .game-cell-1{background-image:url('ball1.gif');}
+        .game-cell-2{background-image:url('ball2.gif');}
+        .game-cell-3{background-image:url('ball3.gif');}
+        .game-cell-4{background-image:url('ball4.gif');}
+        .game-cell-5{background-image:url('ball5.gif');}
       </style>
     </element>
   </body>
