@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample app</title>
+    <link rel="stylesheet" href="cascade.css">
+    
+    <!-- import the click-counter -->
+    <link rel="import" href="xclickcounter.html">
+  </head>
+  <body>
+    <h1>Cascade</h1>
+    
+    <p>Hello world from Dart!</p>
+    
+    <div id="sample_container_id">
+      <table>
+        <tbody template iterate="row in rows">
+          <tr template iterate="cell in row">
+            <td>{{cell}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div is="x-click-counter" id="click_counter" count="{{startingCount}}"></div>
+    </div>
+
+    <script type="application/dart" src="cascade.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
