@@ -18,6 +18,10 @@ class Cell {
 void main() {
   // Enable this to use Shadow DOM in the browser.
   //useShadowDom = true;
+  newGame();
+}
+
+void newGame(){
   generateCells(9,7);
 }
 
