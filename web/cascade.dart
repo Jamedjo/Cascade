@@ -39,7 +39,10 @@ void newGame(){
 void clicked(int row, int col){
   List<Yx> chain = generateChain(row,col);
   //window.alert("Chain:"+chain.toString());
-  if(chain.length>1) chain.forEach((yx)=>setCell(yx, 0));
+  if(chain.length>1){
+    score+=(chain.length * (chain.length-1))+1;
+    chain.forEach((yx)=>setCell(yx, 0));
+  }
 }
 
 void generateCells(int width, int height){
@@ -53,7 +56,7 @@ List<Yx> generateChain(int startRow, int startCol){
   List<Yx> searched = new List<Yx>();
   Yx current;
   int contentType = cells[startRow][startCol].contents;
-  
+  if (contentType==0) return selected;//Not valid chain
   agenda.add(new Yx(startRow,startCol));
   
   while (agenda.length > 0){
@@ -76,9 +79,3 @@ int cellsContent(Yx coordinates){
 void setCell(Yx coordinates, int value){
   cells[coordinates.y][coordinates.x].contents = value;
 }
-
-//void removeChain(int row, int col){
-//  //Increase score
-//  int iVal = numberSelected;
-//  scoreAdd((iVal * (iVal-1))+1);
-//}
