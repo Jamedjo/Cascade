@@ -1148,3 +1148,27 @@ build.dart --machine --changed=web\out\ball1.gif --changed=web\out\ball2.gif --c
 Total time                                                   --  21 ms
 build.dart finished [479 ms]
 
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 336 ms
+Total time                                                   -- 361 ms
+build.dart finished [825 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [487 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 367 ms
+Total time                                                   -- 394 ms
+build.dart finished [861 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  21 ms
+build.dart finished [482 ms]
+
