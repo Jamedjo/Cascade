@@ -38,7 +38,8 @@ void newGame(){
 
 void clicked(int row, int col){
   List<Yx> chain = generateChain(row,col);
-  window.alert("Chain:"+chain.toString());
+  //window.alert("Chain:"+chain.toString());
+  if(chain.length>1) chain.forEach((yx)=>setCell(yx, 0));
 }
 
 void generateCells(int width, int height){
@@ -71,6 +72,9 @@ List<Yx> generateChain(int startRow, int startCol){
 
 int cellsContent(Yx coordinates){
   return cells[coordinates.y][coordinates.x].contents;
+}
+void setCell(Yx coordinates, int value){
+  cells[coordinates.y][coordinates.x].contents = value;
 }
 
 //void removeChain(int row, int col){
