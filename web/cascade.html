@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="cascade.css">
     
     <!-- import the click-counter -->
-    <link rel="import" href="xclickcounter.html">
+    <link rel="import" href="xgamecell.html">
   </head>
   <body>
     <h1>Cascade</h1>
@@ -18,12 +18,13 @@
       <table>
         <tbody template iterate="row in cells">
           <tr template iterate="cell in row">
-            <td>{{cell.contents}}</td>
+            <td>
+              <div is="x-game-cell" contents="{{cell.contents}}"></div>
+            </td>
           </tr>
         </tbody>
       </table>
       <button on-click="newGame()">New Game</button>
-      <div is="x-click-counter" id="click_counter" count="{{startingCount}}"></div>
     </div>
 
     <script type="application/dart" src="cascade.dart"></script>

@@ -460,3 +460,177 @@ build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dar
 Total time                                                   --  22 ms
 build.dart finished [534 ms]
 
+---
+build.dart --machine --changed=web\xgamecell.dart --removed=web\xclickcounter.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web\\xclickcounter.html","message":"unable to open file \"web\\xclickcounter.dart\"","line":12,"charStart":298,"charEnd":355}}]
+Total time spent on web/cascade.html                         -- 255 ms
+Total time                                                   -- 282 ms
+build.dart finished [743 ms]
+
+---
+build.dart --machine --changed=web\xclickcounter.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 355 ms
+Total time                                                   -- 382 ms
+build.dart finished [842 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [484 ms]
+
+---
+build.dart --machine --changed=web\xclickcounter.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"warning","params":{"file":"web/cascade.html","message":"custom element with tag name x-click-counter not found.","line":26,"charStart":603,"charEnd":674}}]
+Total time spent on web/cascade.html                         -- 340 ms
+Total time                                                   -- 367 ms
+build.dart finished [830 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [487 ms]
+
+---
+build.dart --machine --removed=web\xclickcounter.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web/cascade.html","message":"unable to open file \"web\\xclickcounter.html\"","line":10,"charStart":184,"charEnd":229}}]
+[{"method":"warning","params":{"file":"web/cascade.html","message":"custom element with tag name x-click-counter not found.","line":26,"charStart":603,"charEnd":674}}]
+Total time spent on web/cascade.html                         -- 241 ms
+Total time                                                   -- 268 ms
+build.dart finished [726 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web/cascade.html","message":"unable to open file \"web\\xclickcounter.html\"","line":10,"charStart":184,"charEnd":229}}]
+[{"method":"warning","params":{"file":"web/cascade.html","message":"custom element with tag name x-click-counter not found.","line":26,"charStart":603,"charEnd":674}}]
+Total time spent on web/cascade.html                         -- 241 ms
+Total time                                                   -- 269 ms
+build.dart finished [733 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web/cascade.html","message":"unable to open file \"web\\xclickcounter.html\"","line":10,"charStart":184,"charEnd":229}}]
+[{"method":"warning","params":{"file":"web/cascade.html","message":"custom element with tag name x-click-counter not found.","line":26,"charStart":603,"charEnd":674}}]
+Total time spent on web/cascade.html                         -- 237 ms
+Total time                                                   -- 265 ms
+build.dart finished [728 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web/cascade.html","message":"unable to open file \"web\\xclickcounter.html\"","line":10,"charStart":184,"charEnd":229}}]
+[{"method":"warning","params":{"file":"web/cascade.html","message":"custom element with tag name x-click-counter not found.","line":26,"charStart":603,"charEnd":674}}]
+Total time spent on web/cascade.html                         -- 239 ms
+Total time                                                   -- 266 ms
+build.dart finished [732 ms]
+
+---
+build.dart --machine --changed=web\cascade.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web/cascade.html","message":"unable to open file \"web\\xclickcounter.html\"","line":10,"charStart":184,"charEnd":229}}]
+[{"method":"warning","params":{"file":"web/cascade.html","message":"custom element with tag name x-game-cell not found.","line":22,"charStart":488,"charEnd":539}}]
+Total time spent on web/cascade.html                         -- 239 ms
+Total time                                                   -- 265 ms
+build.dart finished [726 ms]
+
+---
+build.dart --machine --changed=web\cascade.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 347 ms
+Total time                                                   -- 375 ms
+build.dart finished [837 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  24 ms
+build.dart finished [489 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 356 ms
+Total time                                                   -- 383 ms
+build.dart finished [966 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  25 ms
+build.dart finished [501 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 343 ms
+Total time                                                   -- 370 ms
+build.dart finished [830 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  24 ms
+build.dart finished [489 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 345 ms
+Total time                                                   -- 373 ms
+build.dart finished [838 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  24 ms
+build.dart finished [495 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 351 ms
+Total time                                                   -- 378 ms
+build.dart finished [852 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [486 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 353 ms
+Total time                                                   -- 380 ms
+build.dart finished [858 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  24 ms
+build.dart finished [500 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 352 ms
+Total time                                                   -- 380 ms
+build.dart finished [852 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [490 ms]
+
+---
+build.dart --machine --changed=web\xgamecell.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 425 ms
+Total time                                                   -- 454 ms
+build.dart finished [947 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [492 ms]
+
