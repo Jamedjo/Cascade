@@ -14,19 +14,17 @@ class Cell {
   int row;
   int col;
   Cell(this.contents,this.row,this.col);
-  String toString(){return contents.toString();} 
+  String toString() => contents.toString(); 
 }
 
-class Xy {
-  int x;int y;Xy(this.x,this.y);
-  bool operator==(other){return x==other.x && y==other.y;}
-  int hashCode(){return x.hashCode;}
+class Yx {
+  int y;int x;
+  Yx(this.y,this.x);
+  bool operator==(other) => (x==other.x) && (y==other.y);
+  int get hashCode{return x.hashCode;}
+  String toString() => "(y$y,x$x)";
 }
 
-/**
- * Learn about the Web UI package by visiting
- * http://www.dartlang.org/articles/dart-web-components/.
- */
 void main() {
   // Enable this to use Shadow DOM in the browser.
   //useShadowDom = true;
@@ -39,8 +37,8 @@ void newGame(){
 }
 
 void clicked(int row, int col){
-  window.alert(""+row.toString()+","+col.toString());
-  generateChain(row,col);
+  List<Yx> chain = generateChain(row,col);
+  window.alert("Chain:"+chain.toString());
 }
 
 void generateCells(int width, int height){
@@ -48,30 +46,31 @@ void generateCells(int width, int height){
   cells = new List<List<Cell>>.generate(height, (i)=>new List<Cell>.generate(width,(j)=>new Cell(rng.nextInt(3)+1,i,j)));
 }
 
-void generateChain(int startRow, int startCol){
-  window.alert(cells[0].elementAt(0).toString());
-  List<Xy> selected = new List<Xy>();
-  List<Xy> agenda = new List<Xy>();
-  List<Xy> searched = new List<Xy>();
-  Xy current;
+List<Yx> generateChain(int startRow, int startCol){
+  List<Yx> selected = new List<Yx>();
+  List<Yx> agenda = new List<Yx>();
+  List<Yx> searched = new List<Yx>();
+  Yx current;
   int contentType = cells[startRow][startCol].contents;
   
-  agenda.add(new Xy(startRow,startCol));
+  agenda.add(new Yx(startRow,startCol));
   
   while (agenda.length > 0){
     current = agenda.last;
-    
     if(cellsContent(current) == contentType){
       selected.add(current);
-      //add adjacent to the search, if not already searched and in bounds
+      bool isValid(Yx yx) => (!selected.contains(yx)) && (yx.x>=0) && (yx.y>=0) && (yx.y<boardH) && (yx.x<boardW);
+      List<Yx> adjacent = [new Yx(current.y,current.x+1),new Yx(current.y,current.x-1),new Yx(current.y+1,current.x),new Yx(current.y-1,current.x)];
+      adjacent.where(isValid).forEach((Yx yx)=>agenda.add(yx));
     }
     searched.add(current);
     agenda.remove(current);
   }
+  return selected;
 }
 
-int cellsContent(Xy coordinates){
-  return cells[coordinates.x][coordinates.y].contents;
+int cellsContent(Yx coordinates){
+  return cells[coordinates.y][coordinates.x].contents;
 }
 
 //void removeChain(int row, int col){
