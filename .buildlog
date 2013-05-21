@@ -106,3 +106,333 @@ build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dar
 Total time                                                   --  24 ms
 build.dart finished [496 ms]
 
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 321 ms
+Total time                                                   -- 346 ms
+build.dart finished [801 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [505 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+Total time                                                   --  25 ms
+build.dart finished [487 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 331 ms
+Total time                                                   -- 358 ms
+build.dart finished [821 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [473 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web\\cascade.dart","message":"absolute paths not allowed here: \"bot:collection\"","line":3,"charStart":40,"charEnd":64}}]
+Total time spent on web/cascade.html                         -- 237 ms
+Total time                                                   -- 263 ms
+build.dart finished [721 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web\\cascade.dart","message":"unable to open file \"web\\bot\"","line":3,"charStart":40,"charEnd":53}}]
+Total time spent on web/cascade.html                         -- 242 ms
+Total time                                                   -- 267 ms
+build.dart finished [730 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web\\cascade.dart","message":"unable to open file \"web\\packages\\bot\"","line":3,"charStart":40,"charEnd":61}}]
+Total time spent on web/cascade.html                         -- 245 ms
+Total time                                                   -- 272 ms
+build.dart finished [754 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+[{"method":"error","params":{"file":"web\\cascade.dart","message":"unable to open file \"web\\packages\\bot\\collection\\array_2d.dart\"","line":3,"charStart":40,"charEnd":86}}]
+Total time spent on web/cascade.html                         -- 239 ms
+Total time                                                   -- 266 ms
+build.dart finished [734 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 601 ms
+Total time                                                   -- 628 ms
+build.dart finished [1096 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [476 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+Total time                                                   --  24 ms
+build.dart finished [502 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 316 ms
+Total time                                                   -- 341 ms
+build.dart finished [810 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  21 ms
+build.dart finished [464 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 333 ms
+Total time                                                   -- 357 ms
+build.dart finished [815 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  21 ms
+build.dart finished [486 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 328 ms
+Total time                                                   -- 352 ms
+build.dart finished [810 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  21 ms
+build.dart finished [482 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 325 ms
+Total time                                                   -- 349 ms
+build.dart finished [804 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [498 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 328 ms
+Total time                                                   -- 353 ms
+build.dart finished [818 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [463 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 332 ms
+Total time                                                   -- 357 ms
+build.dart finished [820 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [476 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 331 ms
+Total time                                                   -- 357 ms
+build.dart finished [846 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [479 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 323 ms
+Total time                                                   -- 348 ms
+build.dart finished [806 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [465 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 327 ms
+Total time                                                   -- 352 ms
+build.dart finished [815 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [481 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 327 ms
+Total time                                                   -- 354 ms
+build.dart finished [824 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [457 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 327 ms
+Total time                                                   -- 352 ms
+build.dart finished [810 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [470 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 326 ms
+Total time                                                   -- 352 ms
+build.dart finished [806 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [471 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 331 ms
+Total time                                                   -- 358 ms
+build.dart finished [830 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [472 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 325 ms
+Total time                                                   -- 350 ms
+build.dart finished [812 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [473 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 322 ms
+Total time                                                   -- 347 ms
+build.dart finished [809 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [475 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 326 ms
+Total time                                                   -- 351 ms
+build.dart finished [806 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  24 ms
+build.dart finished [499 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 347 ms
+Total time                                                   -- 372 ms
+build.dart finished [853 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  24 ms
+build.dart finished [480 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 331 ms
+Total time                                                   -- 357 ms
+build.dart finished [830 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  23 ms
+build.dart finished [503 ms]
+
+---
+build.dart --machine --changed=web\cascade.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 327 ms
+Total time                                                   -- 352 ms
+build.dart finished [804 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [468 ms]
+
+---
+build.dart --machine --changed=web\cascade.html
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 340 ms
+Total time                                                   -- 366 ms
+build.dart finished [832 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [480 ms]
+
+---
+build.dart --machine --changed=web\cascade.dart
+[{"method":"mapping","params":{"from":"web/cascade.html","to":"web\\out\\cascade.html"}}]
+Total time spent on web/cascade.html                         -- 331 ms
+Total time                                                   -- 357 ms
+build.dart finished [811 ms]
+
+---
+build.dart --machine --changed=web\out\cascade.css --changed=web\out\cascade.dart --changed=web\out\cascade.dar...
+Total time                                                   --  22 ms
+build.dart finished [471 ms]
+
