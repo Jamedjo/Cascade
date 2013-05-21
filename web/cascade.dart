@@ -7,8 +7,10 @@ int startingCount = 5;
 List<List<Cell>> cells; //= ['1121','3231','2123','1233','3321'];
 
 class Cell {
-  int contents = 0;
-  Cell(this.contents);
+  int contents=0;
+  int row;
+  int col;
+  Cell(this.contents,this.row,this.col);
 }
 
 /**
@@ -25,7 +27,11 @@ void newGame(){
   generateCells(9,7);
 }
 
+void clicked(int row, int col){
+  window.alert(""+row.toString()+","+col.toString());
+}
+
 void generateCells(int width, int height){
   var rng = new Random();
-  cells = new List<List<Cell>>.generate(height, (i)=>new List<Cell>.generate(width,(j)=>new Cell(rng.nextInt(3)+1)));
+  cells = new List<List<Cell>>.generate(height, (i)=>new List<Cell>.generate(width,(j)=>new Cell(rng.nextInt(3)+1,i,j)));
 }
