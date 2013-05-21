@@ -4,9 +4,17 @@
   <body>
     <element name="x-game-cell" constructor="CellComponent" extends="div">
       <template>
-          <button on-click="increment()">{{contents}}</button>
+          <div class="game-cell {{'game-cell-'+contents.toString()}}" on-click="increment()">{{contents}}</div>
       </template>
       <script type="application/dart" src="xgamecell.dart"></script>
+      <style>
+        .game-cell{
+          width:20px;
+          height:20px;
+          padding:3px;
+        }
+        /*.game-cell-1{background-image:url('ball1.gif');}*/
+      </style>
     </element>
   </body>
 </html>
