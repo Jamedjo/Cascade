@@ -2,21 +2,24 @@ import 'dart:html';
 import 'dart:math';
 import 'package:web_ui/web_ui.dart';
 import 'dart:json';
+import 'package:widget/widget.dart';
+import 'package:widget/components/dropdown.dart';
 
 // initial value for click-counter
 int startingCount = 5;
 Board board;
 List<Board> historyStack = new List<Board>();
 int score;
-int boardW = 9;
-int boardH = 7;
+int boardW;
+int boardH;
 bool isGameOver;
+int numColours;
 
 class Board{
   List<List<Cell>> cells;
   Board(int width, int height){
     var rng = new Random();
-    cells = new List<List<Cell>>.generate(height, (i)=>new List<Cell>.generate(width,(j)=>new Cell(rng.nextInt(3)+1,i,j)));
+    cells = new List<List<Cell>>.generate(height, (i)=>new List<Cell>.generate(width,(j)=>new Cell(rng.nextInt(numColours)+1,i,j)));
   }
   int getContentYx(Yx cd) => getContent(cd.y,cd.x);
   int getContent(int y, int x) => cells[y][x].contents;
@@ -52,8 +55,13 @@ void main() {
   newGame();
 }
 
-void newGame(){
+void newGame({int width:9,int height:7, int colours:3}){
+  //queryAll(".dropdown").forEach((e)=>e.classes.remove("open"));
+  Dropdown.closeDropdowns();
   score=0;
+  boardW=width;
+  boardH=height;
+  numColours=colours;
   board = new Board(boardW,boardH);
   isGameOver = false;
 }
