@@ -10,6 +10,7 @@ List<Board> historyStack = new List<Board>();
 int score;
 int boardW = 9;
 int boardH = 7;
+bool isGameOver;
 
 class Board{
   List<List<Cell>> cells;
@@ -22,6 +23,8 @@ class Board{
   int setContent(int y,int x, int value) => cells[y][x].contents = value;
   int setContentYx(Yx cd, int value) => setContent(cd.y,cd.x,value);
   String toString() => stringify(cells);
+  bool isEmpty() => cells.every((List<Cell> r)=>r.every((cell)=>cell.contents==0));
+  bool noMoves() => !cells.any((List<Cell> r)=>r.any((cell)=>hasMinimumChain(cell.row,cell.col)));
 }
 
 class Cell {
@@ -39,6 +42,8 @@ class Yx {
   bool operator==(other) => (x==other.x) && (y==other.y);
   int get hashCode{return x.hashCode;}
   String toString() => "(y$y,x$x)";
+  List<Yx> adjacent() => [new Yx(y,x+1),new Yx(y,x-1),new Yx(y+1,x),new Yx(y-1,x)];
+  Iterable validAdjacent() => adjacent().where((Yx yx)=>(yx.x>=0) && (yx.y>=0) && (yx.y<boardH) && (yx.x<boardW));
 }
 
 void main() {
@@ -50,6 +55,7 @@ void main() {
 void newGame(){
   score=0;
   board = new Board(boardW,boardH);
+  isGameOver = false;
 }
 
 void clicked(int row, int col){
@@ -61,6 +67,7 @@ void clicked(int row, int col){
     chain.forEach((yx)=>board.setContentYx(yx, 0));
     gravity();
     horizontalGravity();
+    checkGameOver();
   }
 }
 
@@ -97,6 +104,16 @@ void horizontalGravity(){
   }
 }
 
+void checkGameOver (){
+  if(board.isEmpty()) {
+    score += boardW*boardH*3;
+    isGameOver=true;
+  }
+  if (board.noMoves()){
+    isGameOver=true;
+  }
+}
+
 List<Yx> generateChain(int startRow, int startCol){
   List<Yx> selected = new List<Yx>();
   List<Yx> agenda = new List<Yx>();
@@ -110,12 +127,17 @@ List<Yx> generateChain(int startRow, int startCol){
     current = agenda.last;
     if(board.getContentYx(current) == contentType){
       selected.add(current);
-      bool isValid(Yx yx) => (!selected.contains(yx)) && (yx.x>=0) && (yx.y>=0) && (yx.y<boardH) && (yx.x<boardW);
-      List<Yx> adjacent = [new Yx(current.y,current.x+1),new Yx(current.y,current.x-1),new Yx(current.y+1,current.x),new Yx(current.y-1,current.x)];
-      adjacent.where(isValid).forEach((Yx yx)=>agenda.add(yx));
+      bool isValid(Yx yx) => !selected.contains(yx);
+      current.validAdjacent().where(isValid).forEach((Yx yx)=>agenda.add(yx));
     }
     searched.add(current);
     agenda.remove(current);
   }
   return selected;
+}
+
+bool hasMinimumChain(int row, int col){
+  int contentType = board.getContent(row,col);
+  if (contentType==0) return false;
+  return (new Yx(row,col)).validAdjacent().any((Yx yx)=>board.getContentYx(yx)==contentType);
 }

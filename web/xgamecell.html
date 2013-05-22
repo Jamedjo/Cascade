@@ -4,8 +4,8 @@
   <body>
     <element name="x-game-cell" constructor="CellComponent" extends="div">
       <template>
-          <div class="game-cell {{'game-cell-'+contents.toString()}}" instantiate="if contents>0"></div>
-          <div class="empty-cell" instantiate="if contents==0"></div>
+          <div class="game-cell {{'game-cell-'+contents.toString()}}" template instantiate="if contents>0"></div>
+          <div class="empty-cell" template instantiate="if contents==0"></div>
       </template>
       <script type="application/dart" src="xgamecell.dart"></script>
       <style>
