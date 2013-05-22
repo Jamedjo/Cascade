@@ -10,19 +10,26 @@ body {
 h1, p {
   color: #333;
 }
-#game_area {
-  background-image: url('dark_geometric.png');
-}
-#stage_area {
+#score_area {
   position: relative;
   border: 1px solid #ccc;
   background-color: #fff;
+  width:316px;
+  padding: 5px;
 }
-table {
+#score_area span{
+  color: #333;
+  font-size: 120%;
+  font-weight:bold;
+}
+table#game_area {
+  background-image: url('dark_geometric.png');
   border-spacing: 0px;
   padding: 5px;
-  margin: 5px;
-}
+  margin: 6px 0px;
+  border: 5px solid white;
+  outline: 1px solid #CCC;
+ }
 
 label,
 input,

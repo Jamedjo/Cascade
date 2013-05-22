@@ -13,6 +13,7 @@ int score;
 int boardW;
 int boardH;
 bool isGameOver;
+bool boardClear;
 int numColours;
 
 class Board{
@@ -61,6 +62,7 @@ void newGame({int width:9,int height:7, int colours:3}){
   boardW=width;
   boardH=height;
   numColours=colours;
+  boardClear=false;
   board = new Board(boardW,boardH);
   isGameOver = false;
 }
@@ -113,6 +115,7 @@ void horizontalGravity(){
 void checkGameOver (){
   if(board.isEmpty()) {
     score += boardW*boardH*3;
+    boardClear = true;
     isGameOver=true;
   }
   if (board.noMoves()){
