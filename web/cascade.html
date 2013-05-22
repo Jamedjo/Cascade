@@ -16,7 +16,7 @@
     
     <div id="sample_container_id">
       <table>
-        <tbody template iterate="row in cells">
+        <tbody template iterate="row in board.cells">
           <tr template iterate="cell in row">
             <td>
               <div is="x-game-cell" contents="{{cell.contents}}" on-click="clicked(cell.row,cell.col)"></div>
