@@ -4,11 +4,12 @@
   <body>
     <element name="x-game-cell" constructor="CellComponent" extends="div">
       <template>
-          <div class="game-cell {{'game-cell-'+contents.toString()}}"></div>
+          <div class="game-cell {{'game-cell-'+contents.toString()}}" instantiate="if contents>0"></div>
+          <div class="empty-cell" instantiate="if contents==0"></div>
       </template>
       <script type="application/dart" src="xgamecell.dart"></script>
       <style>
-        .game-cell{
+        .game-cell, .empty-cell{
           width: 10px;
           height: 10px;
           padding: 11px;
