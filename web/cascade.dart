@@ -56,7 +56,6 @@ void main() {
 }
 
 void newGame({int width:9,int height:7, int colours:3}){
-  //queryAll(".dropdown").forEach((e)=>e.classes.remove("open"));
   Dropdown.closeDropdowns();
   score=0;
   boardW=width;
@@ -68,7 +67,6 @@ void newGame({int width:9,int height:7, int colours:3}){
 
 void clicked(int row, int col){
   List<Yx> chain = generateChain(row,col);
-  //window.alert("Chain:"+chain.toString());
   if(chain.length>1){
     //window.alert(board.toString());
     score+=(chain.length * (chain.length-1))+1;

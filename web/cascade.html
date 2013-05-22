@@ -4,14 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>Sample app</title>
-    <link rel="stylesheet" href="cascade.css">
     
     <!-- import the click-counter -->
     <link rel="import" href="xgamecell.html">
     <link rel="import" href="packages/widget/components/dropdown.html">
     
-    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cascade.css">
     
   </head>
   <body>
@@ -19,8 +17,8 @@
     
     <p>Hello world from Dart!</p>
     
-    <div id="sample_container_id">
-      <table>
+    <div id="stage_area">
+      <table id="game_area">
         <tbody template iterate="row in board.cells">
           <tr template iterate="cell in row">
             <td>
