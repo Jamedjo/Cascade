@@ -23,7 +23,7 @@ h1, p {
   font-weight:bold;
 }
 table#game_area {
-  background-image: url('dark_geometric.png');
+  background-color: hsl(0,0%,84%);
   border-spacing: 0px;
   padding: 5px;
   margin: 6px 0px;
